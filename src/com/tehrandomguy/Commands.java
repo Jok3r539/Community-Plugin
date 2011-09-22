@@ -36,6 +36,13 @@ public class Commands implements CommandExecutor{
 				slapped.sendMessage(ChatColor.BLUE + "Slap them back with: /slap <player>");
 				slapped.chat("Ouch!");
 			}
+		} else if(command.getName().equalsIgnoreCase("mimic")){
+			Player s = (Player) sender;
+			if(args.length == 0){
+				s.sendMessage(ChatColor.RED + "Please select a player and type a message.");
+			} else if(args.length > 1){
+				Bukkit.getServer().getPlayer(args[0]).chat(args[1]);
+			}
 		}
 		return false;
 	}

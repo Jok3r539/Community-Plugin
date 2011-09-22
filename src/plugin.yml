@@ -4,12 +4,17 @@ description: For the community.
 commands:
     pokeme:
         description: Pokes a player!
-        usage: /<command> [player]
+        usage: |
+            /<command> <player>
         Example: /pokeme TheRandomGuy10
         alias: [poke]
     slap:
         Description: Slap a player.
         Usage: |
             /slap <player>
-authors: [GitHub Users, TehRandomGuy, dbizzzle]
+    mimic:
+        description: Mimics a player.
+        usage: |
+            /<command> <player> <message>
+authors: [TehRandomGuy, dbizzzle]
 website: https://github.com/TehRandomGuy/Community-Plugin
