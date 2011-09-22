@@ -24,6 +24,11 @@ public class Commands implements CommandExecutor{
 			}
 		}
 		
+		if (command.getName().equalsIgnoreCase("pcheck")){
+			Player pc = (Player) sender;
+			pc.sendMessage(ChatColor.AQUA + "The server is running fine!");
+		}
+		
 		if (command.getName().equalsIgnoreCase("slap")) {
 			Player s = (Player) sender;
 			String se = s.getDisplayName();
